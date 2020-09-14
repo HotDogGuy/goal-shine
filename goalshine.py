@@ -17,11 +17,16 @@ def confirmation(): #confirms the user wants those, if not, quits program (make 
         sure = input('Are you sure? Y|N')
         if sure in {'y', 'Y'}:
             print('Confirmation Code Works!')
-            time.sleep(3)
+            goalshinework()
         elif sure in {'n', 'N'}:
             goalshineinput()
         else:
             print("Please Enter Y or N")
-            time.sleep(3)
+            time.sleep(2)
             confirmation()
+def goalshinework():
+    print('SpriteType = {')
+    print('\t''name = ''\"', gfxName, '\"')
+    print()
+    time.sleep(3)
 goalshineinput()
