@@ -19,7 +19,7 @@ def confirmation(): #confirms the user wants those, if not, quits program (make 
             print('Confirmation Code Works!')
             time.sleep(3)
         elif sure in {'n', 'N'}:
-            exit('Exit Code Works!')
+            goalshineinput()
         else:
             print("Please Enter Y or N")
             time.sleep(3)
