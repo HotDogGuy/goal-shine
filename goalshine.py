@@ -8,7 +8,7 @@ def goalshineinput(): #gets gfx names for print
         global gfxNameFile
         gfxNameFile = input("Enter GFX name including .dds or other file format. Type quit to quit.")
         confirmation()
-def confirmation(): #confirms the user wants those, if not, quits program (make it rerun goalshineinput at some point)
+def confirmation(): #confirms the user wants those, if not, quits program
     if gfxNameFile in {'Quit', 'quit', 'QUIT'}: 
         exit()
     else:
@@ -24,7 +24,7 @@ def confirmation(): #confirms the user wants those, if not, quits program (make 
             print("Please Enter Y or N")
             time.sleep(2)
             confirmation()
-def goalshinework():
+def goalshinework(): #creates the thing to be printed
     print('SpriteType = {')
     print('\t''name = ''\"' + gfxName + '\"')
     print('\t''texturefile = ''\"''gfx/interface/goals/' + gfxNameFile + '\"')
