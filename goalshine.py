@@ -27,6 +27,6 @@ def confirmation(): #confirms the user wants those, if not, quits program (make 
 def goalshinework():
     print('SpriteType = {')
     print('\t''name = ''\"' + gfxName + '\"')
-    print()
+    print('\t''texturefile = ''\"''gfx/interface/goals/' + gfxNameFile + '\"')
     time.sleep(3)
 goalshineinput()
