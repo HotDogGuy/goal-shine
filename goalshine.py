@@ -1,4 +1,7 @@
 import time
+import sys
+sys.stdout = open("output.txt" "w")
+sys.stdin - open("input.txt" "w")
 def goalshineinput(): #gets gfx names for print
     global gfxName
     gfxName = input("Enter GFX name exluding .dds or other file format. Type quit to quit.")
@@ -29,4 +32,6 @@ def goalshinework(): #creates the thing to be printed
     print('\t''name = ''\"' + gfxName + '\"')
     print('\t''texturefile = ''\"''gfx/interface/goals/' + gfxNameFile + '\"')
     time.sleep(3)
+    sys.stdin.close()
+    sys.stdout.close()
 goalshineinput()
