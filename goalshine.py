@@ -32,6 +32,5 @@ def goalshinework(): #creates the thing to be printed
     print('\t''name = ''\"' + gfxName + '\"')
     print('\t''texturefile = ''\"''gfx/interface/goals/' + gfxNameFile + '\"')
     time.sleep(3)
-    sys.stdin.close()
-    sys.stdout.close()
+    f.close()
 goalshineinput()
