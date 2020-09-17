@@ -11,9 +11,9 @@ def goalshineinput(): #gets gfx names for print
         global gfxNameFile
         gfxNameFile = input("Enter GFX name including .dds or other file format. Type quit to quit.")
         confirmation()
-def confirmation(): #confirms the user wants those, if not, quits program
+def confirmation(): #confirms the user wants those, if not, restarts goalshineinput
     if gfxNameFile in {'Quit', 'quit', 'QUIT'}: 
-        exit()
+        exit('Goodbye')
     else:
         print(gfxName)
         print(gfxNameFile)
