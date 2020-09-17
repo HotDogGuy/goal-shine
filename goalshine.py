@@ -1,7 +1,7 @@
 import time
 import sys
-sys.stdout = open("output.txt", "w") #save output
-sys.stdin = open("input.txt", "w") #save input
+f = open("output.txt", "w") #open file for output
+sys.stdout = f #saves output to f
 def goalshineinput(): #gets gfx names for print
     global gfxName
     gfxName = input("Enter GFX name exluding .dds or other file format. Type quit to quit.")
