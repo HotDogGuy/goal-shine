@@ -3,20 +3,20 @@ import sys
 f = open("output.txt", "w") #open file for output
 sys.stdout = f #saves output to f
 def goalshineinput(): #gets gfx names for print
-    global gfxName
+    global gfxName #name of file without .dds
     gfxName = input("Enter GFX name exluding .dds or other file format. Type quit to quit.")
-    if gfxName in {'quit', 'Quit', 'QUIT'}:
+    if gfxName in {'quit', 'Quit', 'QUIT'}: #used to exit if quit is typed in
         exit('Goodbye')
     else:
-        global gfxNameFile
+        global gfxNameFile #name of file with .dds
         gfxNameFile = input("Enter GFX name including .dds or other file format. Type quit to quit.")
         confirmation()
 def confirmation(): #confirms the user wants those, if not, restarts goalshineinput
-    if gfxNameFile in {'Quit', 'quit', 'QUIT'}: 
+    if gfxNameFile in {'Quit', 'quit', 'QUIT'}: #used to exit if quit is typed in
         exit('Goodbye')
     else:
-        print(gfxName)
-        print(gfxNameFile)
+        print(gfxName) #for testing, combine into complete sentence
+        print(gfxNameFile) #for testing, combine into complete sentence
         sure = input('Are you sure? Y|N')
         if sure in {'y', 'Y'}:
             print('Confirmation Code Works!')
