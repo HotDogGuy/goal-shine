@@ -1,1 +1,1 @@
-placeholder
+Welcome! This is a program meant to make hoi4 modding easier, by semi-automating the process of creating a goal shine for the gfx you'd like to add. It's still very early in development and currently doesn't work. I'm working on getting this released as soon as possible, mainly for my own good.
